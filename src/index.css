@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-burgundy: #45171B;
+    --color-wine: #2B1015;
+    --color-gold: #C6A46A;
+    --color-ivory: #FAF8F5;
+    --color-beige: #EAE1D4;
+    --color-rose: #B77B7E;
+    --color-charcoal: #221D1E;
+  }
+
+  body {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    background-color: #FAF8F5;
+    color: #221D1E;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Folio Editorial Cards — Refined, architectural, content-first */
+.luxury-card, .folio-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(69, 23, 27, 0.09);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 6px 16px -2px rgba(69, 23, 27, 0.03);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dark .luxury-card, .dark .folio-card {
+  background: #1D1418;
+  border: 1px solid rgba(198, 164, 106, 0.16);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Hairline Editorial Divider */
+.hairline-divider {
+  border-color: rgba(69, 23, 27, 0.1);
+}
+
+.dark .hairline-divider {
+  border-color: rgba(198, 164, 106, 0.15);
+}
+
+/* Folio Typography Utilities */
+.folio-masthead {
+  font-family: "Libre Caslon Display", "Playfair Display", Georgia, serif;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+}
+
+.folio-tag {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Clean, Confident Editorial Buttons */
+.btn-primary {
+  background-color: #45171B;
+  color: #FAF8F5;
+  border: 1px solid #45171B;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.btn-primary:hover {
+  background-color: #5A1F25;
+  border-color: #5A1F25;
+  transform: translateY(-1px);
+}
+
+.dark .btn-primary {
+  background-color: #C6A46A;
+  color: #1A1014;
+  border-color: #C6A46A;
+}
+
+.dark .btn-primary:hover {
+  background-color: #D6B780;
+  border-color: #D6B780;
+}
+
+.btn-secondary {
+  background-color: #FFFFFF;
+  color: #45171B;
+  border: 1px solid rgba(69, 23, 27, 0.2);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.btn-secondary:hover {
+  background-color: #FAF8F5;
+  border-color: #45171B;
+  transform: translateY(-1px);
+}
+
+.dark .btn-secondary {
+  background-color: #241A1E;
+  color: #F8F4EC;
+  border-color: rgba(198, 164, 106, 0.25);
+}
+
+.dark .btn-secondary:hover {
+  background-color: #2D2026;
+  border-color: #C6A46A;
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(69, 23, 27, 0.2);
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(198, 164, 106, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(198, 164, 106, 0.6);
+}
